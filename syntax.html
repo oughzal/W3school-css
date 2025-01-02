@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(221, 116, 4);
+   
+    display: inline-block;
+    }
+    .box:hover{
+        background-color: rgb(54, 6, 213);
+    }
+
+
+.container:hover > .box:not(:hover) {
+    opacity: 0.5;
+    background-color: rgb(93, 181, 5);
+    content: 'non hover';
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #container{
+            border: 1px solid #eee;
+            width: 500px;
+            height: 300px;
+            position: relative;
+    }
+    #bloc1,#bloc2,#bloc3{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    #bloc1{background-color: red;top:20px;left: 20px;
+        z-index: 2;
+    }
+    #bloc2{background-color: green;top:40px;left: 40px;
+    z-index: 1;}
+    #bloc3{background-color: blue;top:60px;left: 60px;}
+    </style>
+  
+</head>
+<body>
+    <div id="container">
+        <div id="bloc1"></div>
+        <div id="bloc2"></div>
+        <div id="bloc3"></div>
+    </div>
+</body>
+</html>
