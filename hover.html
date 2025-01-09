@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        #menu{
+           list-style: none; 
+        }
+        #menu>li{
+            display: inline-flex;
+            border: 1px solid #eee;
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        #menu>li:hover{
+            background-color: blue;
+            cursor: pointer;
+        }
+        #menu>li:active{
+            background-color: light-dart(red,blue);
+        }
+        #menu:hover>:not(#menu>li:hover){
+            background-color: brown;
+            opacity: 0.2;
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>link 1</li>
+        <li>link 2</li>
+        <li>link 3</li>
+        <li>link 4</li>
+        <li>link 5</li>
+        <li>link 6</li>
+    </ul>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ullam!</h1>
+    <h1>Quidem magnam ab totam sapiente officiis id odio quisquam cum.</h1>
+    <h1>Porro nemo numquam in rerum ad ducimus tempore, nesciunt natus.</h1>
+    <h1>A quod omnis et illum doloribus tempore, perspiciatis obcaecati iste.</h1>
+    <h1>Explicabo adipisci eos eaque fuga consectetur reiciendis eius eveniet fugiat!</h1>
+    <h1>Itaque cumque unde cupiditate corporis voluptatum aut sunt asperiores distinctio.</h1>
+</body>
+</html>
